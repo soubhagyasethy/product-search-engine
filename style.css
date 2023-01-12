@@ -6,6 +6,8 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+
 /* style the body */
 body {
     width: 100%;
@@ -23,16 +25,27 @@ body {
     width: 375px;
     height: 520px;
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-    padding: 20px;
+    border-radius: 1rem;
+    /* box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); */
+    box-shadow: 0.5rem 0.5rem 4rem rgba(0, 0, 0, 0.06);
+    /* padding: 20px; */
+    padding: 1.5rem;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 /* style the form */
 .container form {
     width: 100%;
-    border: 1px solid black;
-    border-radius: 4px;
+    /* border: 1px solid black; */
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    position: sticky;
+    margin: 0 0 1rem 0;
+    padding: 0.3rem;
 }
 
 /* style the input */
@@ -40,14 +53,63 @@ body {
     border: none;
     outline: none;
     width: 100%;
-    padding: 4px;
+    /* padding: 4px; */
+    padding: 0.2rem;
 }
 
 /* style the product list */
 .product {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* flex-direction: row; */
+    /* justify-content: center; */
     align-items: center;
     cursor: pointer;
+    /* border: 1px solid red; */
+    border: 0.1rem solid red;
+    /* margin: 10px 0; */
+    margin: 0.5rem 0;
+}
+
+/* style the product image */
+.product img {
+    /* width: 70px;
+    height: 70px; */
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    /* border: 1px solid blue; */
+    border: 0.1rem solid blue;
+    border-radius: 5px;
+    /* margin: 2px; */
+    margin: 0.1rem;
+}
+
+.product h2 {
+    font-size: 1.2rem;
+    padding: 0 0.5rem 0 0;
+}
+
+.product h3 {
+    font-size: 0.8rem;
+}
+@media only screen and (width <= 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .container {
+        width: 90vw;
+        height: 80vh;
+    }
+  }
+
+@media only screen and (width <= 820px) {
+body {
+    background-color: lightblue;
+}
+
+.container {
+    width: 70vw;
+    height: 80vh;
+}
 }
