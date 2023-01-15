@@ -26,9 +26,7 @@ body {
     height: 520px;
     background-color: white;
     border-radius: 1rem;
-    /* box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06); */
     box-shadow: 0.5rem 0.5rem 4rem rgba(0, 0, 0, 0.06);
-    /* padding: 20px; */
     padding: 1.5rem;
     overflow-y: scroll;
 }
@@ -40,7 +38,6 @@ body {
 /* style the form */
 .container form {
     width: 100%;
-    /* border: 1px solid black; */
     border: 0.1rem solid black;
     border-radius: 0.3rem;
     position: sticky;
@@ -53,34 +50,23 @@ body {
     border: none;
     outline: none;
     width: 100%;
-    /* padding: 4px; */
     padding: 0.2rem;
 }
 
 /* style the product list */
 .product {
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: center; */
     align-items: center;
     cursor: pointer;
-    /* border: 1px solid red; */
-    /* border: 0.1rem solid red; */
-    /* margin: 10px 0; */
     margin: 0.5rem 0;
 }
 
 /* style the product image */
 .product img {
-    /* width: 70px;
-    height: 70px; */
     width: 4rem;
     height: 4rem;
     object-fit: cover;
-    /* border: 1px solid blue; */
-    /* border: 0.1rem solid blue; */
     border-radius: 5px;
-    /* margin: 2px; */
     margin: 0.1rem;
 }
 
@@ -92,6 +78,8 @@ body {
 .product h3 {
     font-size: 0.8rem;
 }
+
+
 @media only screen and (width <= 600px) {
     body {
       background-color: lightblue;
