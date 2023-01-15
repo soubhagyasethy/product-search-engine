@@ -65,7 +65,7 @@ body {
     align-items: center;
     cursor: pointer;
     /* border: 1px solid red; */
-    border: 0.1rem solid red;
+    /* border: 0.1rem solid red; */
     /* margin: 10px 0; */
     margin: 0.5rem 0;
 }
@@ -78,7 +78,7 @@ body {
     height: 4rem;
     object-fit: cover;
     /* border: 1px solid blue; */
-    border: 0.1rem solid blue;
+    /* border: 0.1rem solid blue; */
     border-radius: 5px;
     /* margin: 2px; */
     margin: 0.1rem;
